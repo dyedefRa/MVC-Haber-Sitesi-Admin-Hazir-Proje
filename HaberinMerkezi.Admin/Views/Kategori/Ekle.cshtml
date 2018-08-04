@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Kategori Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Kategori Ekle
+            </header>
+            <div class="panel-body">
+                <form class="form-horizontal tasi-form" method="post">
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Üst Kategori :</label>
+                        <div class="col-sm-10">
+                            @Html.DropDownList("gerekyok", new SelectList(ViewBag.Kategori, "ID", "Adi"), ("Seçiniz"), new { @class = "form-control", id = "ParentIDs" })
+                            <span class="help-block">(Bu alan isteğe bağlı)</span>
+                        </div>
+                        </div>
+
+
+                   
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Kategori Adı :</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="kategoriAdi" placeholder="Kategori adı giriniz" class="form-control" required>
+                            <span class="help-block">Bu alanı doldurmak zorunludur*</span>
+                        </div>
+
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Kategori URL :</label>
+                        <div class="col-sm-10">
+                            <input type="text" placeholder="URL" id="kategoriUrl" class="form-control">
+                            <span class="help-block">(Bu alan isteğe bağlı)</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">Aktiflik :</label>
+                        <div class="col-lg-10">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="kategoriAktif" value="option1" checked> EVET
+                            </label>
+
+
+                        </div>
+                    </div>
+
+                    <a href="#" style="margin-left:20px;" class="btn btn-default" onclick="kategoriEkle()">KAYDET</a>
+                </form>
+            </div>
+
+        </section>
+        @Html.ActionLink("Listeye geri dön","Index")
+
+
+    </div>
+</div>
+
+
+
+

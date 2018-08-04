@@ -1,0 +1,120 @@
+﻿@model HaberinMerkezi.Data.Context.Slider
+@{
+    ViewBag.Title = "Slider Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+
+                @if (TempData["sliderEklemeOlayi"] != null)
+                    {
+                        <div class="alert alert-success" role="alert">
+                            @TempData["sliderEklemeOlayi"].ToString()
+                        </div>
+
+                    }
+                    else
+                    {
+                        <p> Slider Ekle</p>
+                    }
+
+            </header>
+
+            <div class="panel-body">
+                <form class="form-horizontal tasi-form" method="post" action="/Slider/Ekle" id="sliderForm" enctype="multipart/form-data">
+
+
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Başlık :</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="Baslik" placeholder="Başlık giriniz" class="form-control" id="baslik">
+                            
+                        </div>
+
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Açıklama :</label>
+                        <div class="col-sm-10">
+                            @Html.TextArea("Aciklama", new { @class = "form-control", id = "Aciklama", placeholder = "Açıklama giriniz", @rows = "5" })
+                           
+                           
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">URL :</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" id="rsm" name="URL" value="" accept="image/*"  />
+                          
+
+
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Resim Ekle :</label>
+                        <div class="col-sm-10">
+                            <input class="btn btn-info" type="file" name="ResimURL" value="" accept="image/*"   required/>
+                            <span class="help-block">Resim yüklemek zorunludur*</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">Aktiflik :</label>
+                        <div class="col-lg-10">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="aktif" name="Aktif" value="evet" checked> EVET
+                            </label>
+
+
+                        </div>
+                    </div>
+
+                    <input type="submit" id="sliderEkle" class="btn btn-default" name="name" value="KAYDET" />
+                </form>
+            </div>
+
+        </section>
+        @Html.ActionLink("Listeye geri dön", "Index")
+
+
+    </div>
+</div>
+
+@section scriptSection{
+
+    <script>
+        $(document).on("click", "#sliderEkle", function () {
+
+
+            $("#sliderForm").ajaxForm({
+
+                success: function (value) {
+                    if (value.Success) {
+                        bootbox.alert(value.Message, function () {
+                            location.reload();
+                        });
+
+                    }
+                }
+            });
+
+        });
+
+
+
+
+    </script>
+}
+
+
+
+
+
+

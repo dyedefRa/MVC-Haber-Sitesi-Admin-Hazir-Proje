@@ -1,0 +1,108 @@
+﻿@model HaberinMerkezi.Data.Context.Slider
+
+@{
+    ViewBag.Title = "Slider Düzenle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Slider Düzenle</h2>
+
+@using (Html.BeginForm("Duzenle","Slider",FormMethod.Post,new { enctype = "multipart/form-data", id = "formuYolla" }))
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.Id)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Baslik, "Başlık", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Baslik, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Baslik, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.URL, "Url :", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.URL, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.URL, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Aciklama, "Açıklama :", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextArea("Aciklama", new { @class = "form-control", @rows = 6 })
+            @Html.ValidationMessageFor(model => model.Aciklama, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Resim :", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <img src="@Model.ResimURL" alt="Alternate Text" />
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Yeni Resim Ekle :", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="file" class="btn btn-info" name="resimGotur" value="" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.EklenmeTarihi, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.Label(Model.EklenmeTarihi.ToLongDateString(), new { @class = "control-label col-md-2" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Aktif, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="checkbox">
+                @Html.CheckBox("Aktif", Model.Aktif, new { @class = "control-label col-md-2" })
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" id="sliderDuzenle" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Slider listesine geri dön", "Index")
+</div>
+
+@section scriptSection{
+<script>
+
+    $(document).on("click", "#sliderDuzenle", function () {
+        $("#formuYolla").ajaxForm({
+            success: function (value) {
+                if (value.Success) {
+                    bootbox.alert(value.Message, function () {
+                        location.reload();
+                    });
+
+                }
+            }
+        });
+
+    });
+
+   
+
+
+    </script>    
+
+
+}

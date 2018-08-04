@@ -1,0 +1,27 @@
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\HaberinMerkezi.Data.dll.config
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\HaberinMerkezi.Data.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\HaberinMerkezi.Data.pdb
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\EntityFramework.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\EntityFramework.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Data\obj\Debug\HaberinMerkezi.Data.csprojResolveAssemblyReference.cache
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Data\obj\Debug\HaberinMerkezi.Data.csproj.CoreCompileInputs.cache
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Data\obj\Debug\HaberinMerkezi.Data.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Data\obj\Debug\HaberinMerkezi.Data.pdb
+C:\Users\Asus\source\repos\HaberinMerkezi\HaberinMerkezi.Data\obj\Debug\HaberinMerkezi.Data.Migrations.contextEkle.resources
+C:\Users\Asus\source\repos\HaberinMerkezi\HaberinMerkezi.Data\obj\Debug\HaberinMerkezi.Data.csproj.GenerateResource.Cache
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\HaberinMerkezi.Data.dll.config
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\HaberinMerkezi.Data.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\HaberinMerkezi.Data.pdb
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\EntityFramework.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\EntityFramework.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\obj\Debug\HaberinMerkezi.Data.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\obj\Debug\HaberinMerkezi.Data.Migrations.contextEkle.resources
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\obj\Debug\HaberinMerkezi.Data.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\obj\Debug\HaberinMerkezi.Data.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\obj\Debug\HaberinMerkezi.Data.csproj.CopyComplete
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\obj\Debug\HaberinMerkezi.Data.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Data\obj\Debug\HaberinMerkezi.Data.pdb

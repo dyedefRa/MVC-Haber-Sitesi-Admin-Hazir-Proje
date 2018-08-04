@@ -1,0 +1,144 @@
+﻿
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*BURASI GLOBAL.js ile yapmıştım geri degıstırdım, name ile alıyorum*@
+<script src="~/ckeditor/ckeditor.js"></script>
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+
+                @if (TempData["haberEklenmeOlayi"] != null)
+        {
+            <div class="alert alert-success" role="alert">
+                @TempData["haberEklenmeOlayi"].ToString()
+            </div>
+
+}
+else
+{
+        <p> Haber Ekle</p>
+}
+
+            </header>
+
+            <div class="panel-body">
+                <form class="form-horizontal tasi-form" method="post" action="/Haber/Ekle" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label"> Kategori :</label>
+                        <div class="col-sm-10">
+                            @Html.DropDownList("KategoriID", new SelectList(ViewBag.Kategori, "Id", "Adi"), ("Seçiniz"), new { @class = "form-control", required = "True", id = "katId" })
+                            <span class="help-block">Kategori seçmek zorunludur*</span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Başlık :</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="Baslik" placeholder="Kategori adı giriniz" class="form-control" id="baslik" required>
+                            <span class="help-block">Başlık girmek zorunludur*</span>
+                        </div>
+
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Kısa açıklama :</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="KisaAciklama" id="kaciklama" class="form-control">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Açıklama :</label>
+                        <div class="col-sm-10">
+                            @Html.TextArea("Aciklama", new { @class = "form-control", id = "Aciklama", required = "True", placeholder = "Açıklama giriniz", @rows = "5" })
+                            <span class="help-block">Açıklama girmek zorunludur*</span>
+                            @*@Html.TextArea("Aciklama",new { id = "Aciklama" })
+                <script type="text/javascript">
+                    var editor = CKEDITOR.instances["Aciklama"];
+                    if (editor) {
+                        editor.destroy(true);
+                    }
+                    CKEDITOR.replace('Aciklama', {
+                        enterMode: CKEDITOR.ENTER_BR,
+                    });
+                </script>*@
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Vitrin resmi :</label>
+                        <div class="col-sm-10">
+                            <input class="btn btn-success" type="file" id="rsm" name="vitrinResim" value="" accept="image/*" required />
+                            <span class="help-block">Vitrin resmi yüklemek zorunludur*</span>
+
+
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Detay resim(ler) :</label>
+                        <div class="col-sm-10">
+                            <input class="btn btn-info" type="file" name="detayResimler" value="" accept="image/*" multiple />
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Etiket Ekle :</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="etiketler" placeholder="afrika,asya" data-role="tagsinput" class="bootstrap-tagsinput" id="etiketler" value="" required />
+                            <span class="help-block">Etiket eklemek zorunludur*(Virgül koyarak ayırınız. En sondaki virgülü siliniz)</span>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                     <div class="form-group">
+                        <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">Aktiflik :</label>
+                        <div class="col-lg-10">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="aktif" name="Aktif" value="evet" checked> EVET
+                            </label>
+
+
+                        </div>
+                    </div>
+
+
+                    <input type="submit" id="haberekle" class="btn btn-default" name="name" value="KAYDET" />
+                </form>
+</div>
+
+        </section>
+        @Html.ActionLink("Listeye geri dön", "Index")
+
+
+    </div>
+</div>
+
+@section scriptSection {
+    <script>
+        $("#haberekle").click(function () {
+            var etiketler = $("#etiketler").val();
+            if (etiketler == null || etiketler=="") {
+                swal("Kategori seçimi,başlık,açıklama,vitrin resmi ve etiket alanları zorunludur.", "Etiketleri virgül yardımıyla ayırınız.Örneğin : etiket,böyle,ayrılır    (Ensondaki virgülü siliniz..)", "warning");
+            }
+        });
+    </script>
+    
+    }
+
+
+
+

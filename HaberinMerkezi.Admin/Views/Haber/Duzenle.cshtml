@@ -1,0 +1,230 @@
+﻿@model HaberinMerkezi.Admin.App_Classes.HaberEtiketModel
+@using HaberinMerkezi.Data.Context;
+@{
+    ViewBag.Title = "Duzenle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm("Duzenle","Haber",FormMethod.Post,new { enctype="multipart/form-data"}))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    @if (TempData["haberDuzenle"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["haberDuzenle"].ToString()
+        </div>
+    }
+    else
+    {
+        <h4>Haber Düzenle</h4>
+    }
+
+    <hr />
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.Haber.Id)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Haber.KullaniciID, "Yazar Adı :", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.Label(Model.Haber.Kullanici.AdSoyad, new { style = "color:Red" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Vitrin Resim ", htmlAttributes: new { @class = "control-label col-sm-2" })
+        @{
+            HaberContext ctx = new HaberContext();
+            var resimler = ctx.Resim.Where(x => x.HaberID == Model.Haber.Id).ToList();
+            var vitrinResim = resimler.FirstOrDefault(x => x.VitrinMi == true);
+            var detayResim = resimler.Where(x => x.VitrinMi == false);
+        }
+        <div class="col-sm-10">
+            <a href="@vitrinResim.ResimYol" data-lightbox="image-1" data-title="vitrin"><img src="@vitrinResim.ResimYol" class="img-fluid" alt="Alternate Text" /></a>
+        </div>
+    </div>
+    @if (detayResim.Count() > 0)
+    {
+        <div class="form-group">
+            <div class="col-sm-2">Detay Resim  <p>(Silmek için üzerine tıklayın)</p></div>
+
+            <div class="row col-sm-10">
+                @foreach (var rsm in detayResim)
+                {
+                    <div class="col-sm-3">
+                        <a href="#"><img src=@rsm.ResimYol class="detayResimSil img-thumbnail" data-resimid="@rsm.Id" style="max-height:100px" alt="Alternate Text" /></a>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+    <div class="form-group">
+        @Html.Label("Vitrin Resmi Guncelle :", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="file" class="btn btn-success" name="yeniVitrinResim" accept="image/*" value="" />
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Detay Resim(ler) Ekle :", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="file" name="detayResimler" class="btn btn-info" multiple accept="image/*" value="" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Haber.KategoriID, "Kategori :", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("Haber.KategoriID", new SelectList(ViewBag.Kategori, "Id", "Adi"), htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Haber.KategoriID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Haber.Baslik, "Başlık :", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Haber.Baslik, new { htmlAttributes = new { @class = "form-control", required = "True" } })
+            @Html.ValidationMessageFor(model => model.Haber.Baslik, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Haber.KisaAciklama, "Kısa açıklama :", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Haber.KisaAciklama, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Haber.KisaAciklama, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Haber.Aciklama, "Açıklama :", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextArea("Haber.Aciklama", new { @class = "form-control", @rows = "6", required = "True" })
+
+            @Html.ValidationMessageFor(model => model.Haber.Aciklama, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="col-sm-2 col-sm-2 control-label">Etiketler :</label>
+        <div class="col-sm-10">
+            @Html.TextBoxFor(model => model.EtiketAdlari, new { @class = "form-control", data_role="tagsinput" })
+           
+
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="col-sm-2 col-sm-2 control-label">Okunma Sayısı :</label>
+        <div class="col-sm-10">
+            <input type="text" readonly name="name" class="form-control" value="@Model.Haber.OkunmaSayisi.ToString()" />
+        </div>
+    </div>
+
+
+
+
+    <div class="form-group">
+        <label class="col-sm-2 col-sm-2 control-label">Eklenme Tarihi :</label>
+        <div class="col-md-10">
+            <input type="text" readonly name="name" class="form-control" value="@Model.Haber.EklenmeTarihi.ToString("dd MMMM yyyy HH:mm:ss")" />
+           
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Haber.Aktif, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="checkbox">
+                @*@Html.EditorFor(model => model.Aktif)
+                    @Html.ValidationMessageFor(model => model.Aktif, "", new { @class = "text-danger" })*@
+                @Html.CheckBoxFor(model => model.Haber.Aktif, htmlAttributes: new { @class = "control-label col-md-2" })
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+@section scriptSection{
+
+
+    <script>
+        $(".detayResimSil").click(function () {
+            var resimID = $(this).data("resimid");
+
+            swal({
+                title: "Emin miyiz?",
+                text: "Admincim,bu resim tamamen silinecek..Onaylıyor musun?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonClass: "btn-danger",
+                confirmButtonText: "Evet, sil tatlım!",
+                cancelButtonText: "Yaa hayır",
+                closeOnConfirm: false,
+                closeOnCancel: false
+            },
+                function (isConfirm) {
+                    if (isConfirm) {
+                        $.ajax({
+                            type: 'POST',
+                            url: "/Haber/DetayResimSil/" + resimID,
+                            dataType: 'json',
+                            success: function (value) {
+                                if (value.Success) {
+
+
+                                    
+                                    
+                                    swal({
+                                        title: "Silindi!",
+                                        text: "Haha , resim yok edildi",
+                                        type: "success",
+                                        timer: 3000,
+
+
+                                    });
+                                 
+
+
+                                 
+
+
+                                    location.reload();
+                                }
+                                else {
+                                    swal("Hata", "Admincim birşeyler ters gidiyor.Sonra dener misin tatlım", "error");
+                                }
+                            }
+                        })
+                       
+                    } else {
+                        swal("İptal edildi", "Resim güvende admincim.Görüşürüz", "error");
+                    }
+                });
+           
+
+        }
+
+        );
+
+
+
+    </script>
+
+
+
+
+
+}

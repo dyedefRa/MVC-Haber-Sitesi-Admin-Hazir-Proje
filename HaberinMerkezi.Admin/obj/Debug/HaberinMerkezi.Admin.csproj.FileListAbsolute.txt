@@ -1,0 +1,93 @@
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberinMerkezi.Admin.dll.config
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberinMerkezi.Admin.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberinMerkezi.Admin.pdb
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\Autofac.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\Autofac.Integration.Mvc.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\Microsoft.Web.Infrastructure.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\MvcSiteMapProvider.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\MvcSiteMapProvider.WebActivator.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Helpers.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Mvc.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Razor.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Webpages.Deployment.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Webpages.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Webpages.Razor.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\WebActivatorEx.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\Microsoft.Web.Administration.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\Autofac.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\Autofac.Integration.Mvc.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\MvcSiteMapProvider.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\MvcSiteMapProvider.WebActivator.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Razor.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Webpages.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Webpages.Deployment.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Webpages.Razor.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Helpers.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Mvc.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\obj\Debug\HaberinMerkezi.Admin.csprojResolveAssemblyReference.cache
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\obj\Debug\HaberinMerkezi.Admin.csproj.CoreCompileInputs.cache
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\obj\Debug\HaberinMerkezi.Admin.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\obj\Debug\HaberinMerkezi.Admin.pdb
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberinMerkezi.Data.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberMerkezi.Core.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\EntityFramework.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberinMerkezi.Data.pdb
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberinMerkezi.Data.dll.config
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberMerkezi.Core.pdb
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberMerkezi.Core.dll.config
+c:\users\asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\EntityFramework.xml
+C:\Users\Asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\EntityFramework.SqlServer.dll
+C:\Users\Asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\EntityFramework.SqlServer.xml
+C:\Users\Asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\PagedList.dll
+C:\Users\Asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\PagedList.Mvc.dll
+C:\Users\Asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\PagedList.xml
+C:\Users\Asus\source\repos\HaberinMerkezi\HaberinMerkezi.Admin\bin\PagedList.Mvc.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberinMerkezi.Admin.dll.config
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberinMerkezi.Admin.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberinMerkezi.Admin.pdb
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\Autofac.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\Autofac.Integration.Mvc.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\EntityFramework.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\EntityFramework.SqlServer.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberinMerkezi.Data.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberMerkezi.Core.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\MvcSiteMapProvider.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\MvcSiteMapProvider.WebActivator.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\PagedList.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\PagedList.Mvc.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Helpers.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Mvc.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Razor.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Webpages.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Webpages.Razor.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\WebActivatorEx.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\Microsoft.Web.Administration.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberinMerkezi.Data.pdb
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberinMerkezi.Data.dll.config
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberMerkezi.Core.pdb
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\HaberMerkezi.Core.dll.config
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\Autofac.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\Autofac.Integration.Mvc.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\EntityFramework.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\EntityFramework.SqlServer.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\MvcSiteMapProvider.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\MvcSiteMapProvider.WebActivator.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\PagedList.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\PagedList.Mvc.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Razor.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Webpages.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Webpages.Razor.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Helpers.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\bin\System.Web.Mvc.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\obj\Debug\HaberinMerkezi.Admin.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\obj\Debug\HaberinMerkezi.Admin.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\obj\Debug\HaberinMerkezi.Admin.csproj.CopyComplete
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\obj\Debug\HaberinMerkezi.Admin.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberinMerkezi.Admin\obj\Debug\HaberinMerkezi.Admin.pdb

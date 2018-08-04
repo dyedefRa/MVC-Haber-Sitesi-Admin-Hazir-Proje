@@ -1,0 +1,29 @@
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\obj\Debug\HaberinMerkezi.Core.csprojResolveAssemblyReference.cache
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\obj\Debug\HaberinMerkezi.Core.csproj.CoreCompileInputs.cache
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\obj\Debug\HaberMerkezi.Core.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\obj\Debug\HaberMerkezi.Core.pdb
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberMerkezi.Core.dll.config
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberMerkezi.Core.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberMerkezi.Core.pdb
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\EntityFramework.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberinMerkezi.Data.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberinMerkezi.Data.pdb
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberinMerkezi.Data.dll.config
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\EntityFramework.xml
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberMerkezi.Core.dll.config
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberMerkezi.Core.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberMerkezi.Core.pdb
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\EntityFramework.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberinMerkezi.Data.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberinMerkezi.Data.pdb
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberinMerkezi.Data.dll.config
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\EntityFramework.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\obj\Debug\HaberinMerkezi.Core.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\obj\Debug\HaberinMerkezi.Core.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\obj\Debug\HaberinMerkezi.Core.csproj.CopyComplete
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\obj\Debug\HaberMerkezi.Core.dll
+C:\Users\Asus\source\repos\AAA.BITEN PROJELER\WEB\HaberinMerkezi\HaberMerkezi.Core\obj\Debug\HaberMerkezi.Core.pdb

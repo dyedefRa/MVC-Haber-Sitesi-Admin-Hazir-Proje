@@ -1,0 +1,5 @@
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberMerkezi.Core.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\bin\Debug\HaberMerkezi.Core.pdb
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\obj\Debug\HaberMerkezi.Core.csproj.CoreCompileInputs.cache
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\obj\Debug\HaberMerkezi.Core.dll
+c:\users\asus\source\repos\HaberinMerkezi\HaberMerkezi.Core\obj\Debug\HaberMerkezi.Core.pdb

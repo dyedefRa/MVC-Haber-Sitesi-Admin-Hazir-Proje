@@ -1,0 +1,131 @@
+﻿
+
+
+
+@model PagedList.IPagedList<HaberinMerkezi.Data.Context.Slider>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Slider Listesi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="panel">
+    <header class="panel-heading">
+
+        Slider Listesi
+
+
+    </header>
+    <div class="panel-body">
+        <div class="adv-table">
+            <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
+                <thead>
+                    <tr>
+                        <th>ID:</th>
+                        <th>Resim:</th>
+                        <th>Başlık :</th>
+                        <th>Açıklama:</th>
+                        <th>URL :</th>
+
+                        <th class="hidden-phone">Aktiflik Durumu:</th>
+                        <th>Eklenme Tarihi:</th>
+                        <th>İşlemler</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var slider in Model)
+                    {
+
+
+                        <tr class="gradeX">
+
+
+                            <td>@slider.Id</td>
+                            <td> <img src="@slider.ResimURL" style="max-height:32px" class="img-fluid img-thumbnail" alt="Alternate Text" /></td>
+                            <td> @slider.Baslik</td>
+                            <td>@slider.Aciklama </td>
+                            <td>@slider.URL</td>
+                           
+
+                            <td class="center hidden-phone">@Html.CheckBox("Aktiflik", slider.Aktif, new { @onclick = "return false" })</td>
+                            <td>@slider.EklenmeTarihi</td>
+                            <td>
+                                <a class="btn btn-info btn-sm" href=@Url.Action("Duzenle","Haber",new { id = slider.Id })>Düzenle</a>
+                                @*@Html.ActionLink("Sil", "Sil", new { id = kategori.Id }, new { onclick = "return confirm('Kayıtı silmek istediğinize emin misiniz?')", @class = "btn btn-danger btn-sm" })*@
+                                @if (slider.Aktif == true)
+                                {
+                                    <a href="#" class="sliderap btn btn-default btn-sm" data-sliderid="@slider.Id">Pasifleştir</a>
+                                }
+                                else
+                                {
+                                    <a href="#" class="sliderap btn btn-success btn-sm" data-sliderid="@slider.Id">Aktifleştir</a>
+                                }
+                                <a class="slidersil btn btn-danger btn-sm" id="habersil" data-sliderid="@slider.Id">Sil</a>
+                            </td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+        @*PAGED LIST 5*@
+        @Html.PagedListPager(Model, Sayfa => Url.Action("Index", new { Sayfa }), PagedListRenderOptions.Classic)
+    </div>
+</section>
+
+
+@section scriptSection{
+    <script>
+
+        $(document).ready(function () {
+            $(".slidersil").click(function () {
+
+                var sliderID = $(this).data("sliderid");
+               
+                $.ajax({
+                    type: 'POST',
+                    url: "/Slider/Sil/" + sliderID,
+                    dataType: 'json',
+                    success: function (value) {
+                       
+                        if (value.Success) {
+                            bootbox.alert(value.Message, function () {
+                                location.reload();
+                            });
+
+
+                        }
+                    }
+                });
+
+            });
+
+            $(".sliderap").click(function () {
+                var sliderID = $(this).data("sliderid");
+                $.ajax({
+                    type: 'POST',
+                    url: "/Slider/AktifPasif/" + sliderID,
+                    dataType: 'json',
+                    success: function (value) {
+                        if (value.Success) {
+                            bootbox.alert(value.Message, function () {
+                                location.reload();
+                            });
+
+
+                        }
+                    }
+                });
+
+            });
+        });
+
+
+
+    </script>
+
+}
+

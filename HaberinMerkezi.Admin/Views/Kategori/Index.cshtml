@@ -1,0 +1,109 @@
+﻿@model PagedList.IPagedList<HaberinMerkezi.Data.Context.Kategori>
+@using HaberinMerkezi.Data.Context
+@using PagedList.Mvc;
+@*PAGED LIST 4 yukarıda ıkı adet*@
+@{
+    ViewBag.Title = "Kategori Listesi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="panel">
+    <header class="panel-heading">
+        Kategori Listesi
+    </header>
+    <div class="panel-body">
+        <div class="adv-table">
+            <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
+                <thead>
+                    <tr>
+                        <th>ID :</th>
+
+                        <th>Adı :</th>
+                        <th>Üst Kategori :</th>
+                        <th>Ekleyen :</th>
+
+                        <th class="hidden-phone">URL(s) :</th>
+                        <th class="hidden-phone">Aktiflik Durumu:</th>
+                        <th>İşlemler :</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var kategori in Model)
+                    {
+                        HaberContext ctx = new HaberContext();
+
+
+
+                        <tr class="gradeX">
+                            <td>@kategori.Id</td>
+                            <td> @kategori.Adi</td>
+
+                            @if (kategori.ParentID == 0 || kategori.ParentID == null)
+                            {
+                                <td>Yok </td>
+                            }
+                            else
+                            {
+
+                                var ustAd = ctx.Kategori.FirstOrDefault(x => x.Id == kategori.ParentID).Adi;
+                                <td>@ustAd </td>
+                            }
+
+
+                            <td>@kategori.Kullanici.AdSoyad</td>
+
+                            <td class="center hidden-phone">@kategori.URL</td>
+                            <td class="center hidden-phone">@Html.CheckBox("Aktiflik", kategori.Aktif, new { @onclick = "return false" })</td>
+                            <td>
+                                <a class="btn btn-info btn-sm" href=@Url.Action("Duzenle","Kategori",new { id = kategori.Id })>Düzenle</a>
+                                @*@Html.ActionLink("Sil", "Sil", new { id = kategori.Id }, new { onclick = "return confirm('Kayıtı silmek istediğinize emin misiniz?')", @class = "btn btn-danger btn-sm" })*@
+                                <a class="btn btn-danger btn-sm" data-katid="@kategori.Id">Sil</a>
+                            </td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+        @*PAGED LIST 5*@
+        @Html.PagedListPager(Model, Sayfa => Url.Action("Index", new { Sayfa }), PagedListRenderOptions.Classic)
+    </div>
+</section>
+
+@section scriptSection{
+    <script>
+        $(document).ready(function () {
+            $(".btn-danger").click(function () {
+                var katID = $(this).data("katid");
+
+                $.ajax({
+                    type: 'POST',
+                    url: "/Kategori/Sil",
+                    data: { id: katID },
+                    dataType: 'json',
+                    success: function (value) {
+                        if (value.Success) {
+                            bootbox.alert(value.Message, function () {
+                                location.reload();
+                            });
+                        }
+                        else {
+                            bootbox.alert(value.Message, function () {
+                                //
+                            });
+                        }
+                    }
+                });
+
+
+            });
+
+        });
+    </script>
+
+}
+
+
